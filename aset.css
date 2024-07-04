@@ -1,0 +1,97 @@
+/* container ...*/
+body
+{
+  margin:0px;
+  display:grid;
+  grid-template-rows:40px 300px 500px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+                       "aside"
+                       "main"
+                       "footer";
+}
+/*header ...*/
+header
+{
+  grid-area: header;
+  background-color: #4682B4;
+  display: grid;
+  box-sizing: border-box;
+  border-block: 1px;
+  padding: 15px 10px 15px 20px;
+  grid-template-rows:100%;
+  grid-template-columns:45px 85px 55px 55px;
+  grid-template-areas:"brnd""downd""contact""about";
+  font-size: 10px;
+}
+/*home ...*/
+home
+{
+  grid-area: brnd;
+  background-color: white;
+  margin: 0px;
+}
+/*download ...*/
+download
+{
+  grid-area: downd;
+}
+/*contact ...*/
+kontak
+{
+  grid-area: contact;
+}
+/*about ...*/
+about
+{
+  grid-area: about;
+}
+/*a link navigation ...*/
+a
+{
+  text-decoration: none;
+  color: white;
+}
+/*aside ...*/
+aside
+{
+  grid-area: aside;
+  background-color: white;
+}
+/*nama saya ... */
+h3
+{
+  margin:0px 0px 0px 80px;
+}
+/*nama jabatan ...*/
+h4
+{
+  margin:0px 0px 0px 125px;
+  color:rgb(48,48,48);
+  font-family:sans serif;
+}
+/*div gambar profile ...*/
+.foto
+{
+  margin:0px;
+  background-color:rgb(235,235,235);
+}
+/*gambar profile ...*/
+img
+{
+  width:70px;
+  height:70px;
+  padding:20px 0px 10px 150px;
+}
+/*main ...*/
+main
+{
+  grid-area: main;
+  background-color: white;
+}
+/*footer ...*/
+footer
+{
+  grid-area: footer;
+  background-color: #B0C4DE;
+}
