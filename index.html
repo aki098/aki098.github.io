@@ -1,14 +1,118 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <style type="text/css">
-h1
+/* container ...*/
+body
 {
-  color:red;
+  margin:0px;
+  display:grid;
+  grid-template-rows:40px 300px 500px 100px;
+  grid-template-columns: 100%;
+  grid-template-areas: "header"
+                       "aside"
+                       "main"
+                       "footer";
+}
+/*header ...*/
+header
+{
+  grid-area: header;
+  background-color: #4682B4;
+  display: grid;
+  box-sizing: border-box;
+  border-block: 1px;
+  padding: 15px 10px 15px 20px;
+  grid-template-rows:100%;
+  grid-template-columns:45px 85px 55px 55px;
+  grid-template-areas:"brnd""downd""contact""about";
+  font-size: 10px;
+}
+/*home ...*/
+home
+{
+  grid-area: brnd;
+  background-color: white;
+  margin: 0px;
+}
+/*download ...*/
+download
+{
+  grid-area: downd;
+}
+/*contact ...*/
+kontak
+{
+  grid-area: contact;
+}
+/*about ...*/
+about
+{
+  grid-area: about;
+}
+/*a link navigation ...*/
+a
+{
+  text-decoration: none;
+  color: white;
+}
+/*aside ...*/
+aside
+{
+  grid-area: aside;
+  background-color: white;
+}
+/*nama saya ... */
+h3
+{
+  margin:0px 0px 0px 80px;
+}
+/*nama jabatan ...*/
+h4
+{
+  margin:0px 0px 0px 125px;
+  color:rgb(48,48,48);
+  font-family:sans serif;
 }
 </style>
 <body>
-<h1> saya ee  </h1>
+ 
+    <header>
+    <!-menu navigasi ... ->
+    
+    <!-menu home ...->
+    <div class="home"><a href="home.html">HOME</a></div>
+    
+    <!-menu download ... ->
+    <div class="donwload"/><a href="download.html">DOWNLOAD CV </a></div>
+    
+    <!-menu kontak ...->
+    <div class="kontak"><a href="kontak.html">CONTACT</a></div>
+    
+     <!-menu about...->
+    <div class="about "><a href="about.html">ABOUT ME</a></a>
+    </div>
+    
+    </header>
+    
+    <!-aside ...->
+    <aside>
+  
+    <!- foto profile ...->
+    <div class=foto>
+    <img src="foto.png"></img>
+    </div>
+    <h3>RICKY DWI PRIYANDIKA<h3>
+    <h4>(web developer)</h4>
+    </aside>
+    
+    <!-main...->
+    <main></main>
+    
+    <!-footer...->
+    <footer></footer>
+    
 </body>
 </head>
 </html>
